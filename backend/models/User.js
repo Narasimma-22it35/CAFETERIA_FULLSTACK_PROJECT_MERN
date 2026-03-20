@@ -34,6 +34,11 @@ const userSchema = new mongoose.Schema(
         campusCardBalance: {
             type: Number,
             default: 200, // Demo balance
+        },
+        preferences: {
+            emailNotifications: { type: Boolean, default: true },
+            pushNotifications: { type: Boolean, default: true },
+            darkMode: { type: Boolean, default: false }
         }
     },
     { timestamps: true }
